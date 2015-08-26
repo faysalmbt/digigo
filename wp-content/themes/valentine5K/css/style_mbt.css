@@ -1,0 +1,15 @@
+/*style sheet(faysal)*/
+/******* pagination Start*********/
+.pagination{margin: 0px !important;}
+.wp-paginate {padding:0; margin:0;}
+.wp-paginate li {display:inline; list-style:none;}
+.wp-paginate a {background:#fff; border:1px solid #ddd; color:#000; margin-right:4px; padding:4px 8px; text-align:center; text-decoration:none;}
+.wp-paginate a:hover {background:#eee; border-color: #ddd;}
+.wp-paginate a:active {background: #f3123f;color: #000;}
+.wp-paginate .title {color:#555; margin-right:4px;}
+.wp-paginate .gap {color:#999; margin-right:4px;}
+.wp-paginate .current {color:#fff; background:#f3123f; border:1px solid #f3123f; margin-right:4px; padding:4px 8px;}
+.wp-paginate .page {}
+.wp-paginate .prev, .wp-paginate .next {}
+.wp-paginate  li:first-child a, .wp-paginate  li:last-child a{  background: #f3123f;color: white;}
+/*****Pagination End *******/
