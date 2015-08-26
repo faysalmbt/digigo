@@ -1,0 +1,2 @@
+# digigo
+digigo-wp
