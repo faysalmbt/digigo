@@ -8,12 +8,16 @@ body { background-color:#fff; font-family:maven_proregular; background: url(../i
 .slidrbx { /*background-image:url(../images/dmy-slider1.jpg); height:468px;*/}
 .contnt .row { margin-left:0; margin-right:0}
 .contnt .col-lg-8, .contnt .col-lg-4 {padding-left: 0px;    padding-right: 0px;}
-.txturin { background-image:url(../images/bg3.png); color:#fff;}
+.txturin { /*background-image:url(../images/bg3.png);*/ color:#fff;}
 .imgin1 { background-image: url(../images/img6.jpg)}
 .contntin { padding:28px 20px 0px  !important  }
  .footerbxin {
     margin-left: -20px;
     margin-right: -20px;
+}
+.page-header{display: none;}
+.event-content a.more-link {
+    display: none;
 }
 .blogbx .col-lg-8, .contnt .col-lg-4 { padding-left:0px; padding-right:0px}
 .hdstripblg { position:absolute; bottom:0}
@@ -250,3 +254,5 @@ h1, h2, h3, h4, p { margin:0; padding:0}
     width: 80%;
 }
 .pagination > li > a, .pagination > li > span {font-size: 14px;  padding: 5px 10px;}
+article.live-events{}
+

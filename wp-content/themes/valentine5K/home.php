@@ -45,6 +45,7 @@ get_header();
       <div class="row txturin">
         <div class="col-lg-12">
           <div class="txtinf">
+            
             <h2><?php if ( is_active_sidebar( 'sidebar-6' ) ) { dynamic_sidebar('sidebar-6'); } ?></h2>
 
           </div>

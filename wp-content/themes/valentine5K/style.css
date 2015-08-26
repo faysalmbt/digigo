@@ -404,6 +404,8 @@ body .checkout.woocommerce-checkout input[type="text"],body .checkout.woocommerc
     float: none;
 }
 
+
+
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product,.woocommerce ul.products li.product:nth-child(2n), .woocommerce-page ul.products li.product:nth-child(2n){
 float: none;
     width: 80%;
@@ -414,3 +416,64 @@ float: none;
 .blackback ul li a:hover{ color: #8dc72a;}
 .arcyr li a{ line-height: 22px;}
 .arcyr li a:hover{ text-decoration: none;color: #8dc72a;} 
+.home .ee-upcoming-events-widget-ul > li:hover, .ee-upcoming-events-widget-ul > li:hover {
+    background: #F9F9F9;
+}
+/* home page*/
+
+.home .ee-upcoming-events-widget-ul > li {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.home .ee-upcoming-events-widget-ul > li {
+    float: left;
+    margin: 0 3.8% 2.992em 0;
+    padding: 0;
+    position: relative;
+    width: 28.05%;
+        margin-top: 3%;
+}
+.home .espresso_events img{ max-width: 90%; height: auto !important;}
+.home .espresso_events .event-content{ display: none;}
+.home .espresso_events .ee-event-datetimes-ul li {
+    list-style-type: none;
+    margin: 0 0 1em;
+    font-size: 14px;
+}
+.home .espresso-event-list-wrapper-dv form .clear{ display: none;}
+.home .ee-upcoming-events-widget-ul > li ul > li{ margin-top: 15px;    font-size: 18px;}
+.home .espresso-event-list-wrapper-dv input.ticket-selector-submit-btn {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 4px 24px;
+    font-size: 15px;
+    display: block;
+    width: 99%;
+}
+ .home .espresso_events:hover input.ticket-selector-submit-btn{
+      background: #8ec740;
+    border: 1px solid #8ec740;
+}
+.home .ee-upcoming-events-widget-ul > li{ margin-top: 0%; margin-bottom: 25px;}
+.home .txtinf > h2 a{ display: block;width: 100%; margin-top: 6%;margin-bottom: 3%; text-decoration: none; font-size: 24px; text-transform: capitalize; text-align: center;}
+.home .ee-upcoming-events-widget-ul > li:hover a{ text-decoration: inherit;}
+.home .ee-upcoming-events-widget-ul{ margin-bottom: 20px; float: left;width: 100%;}
+.home .ee-upcoming-events-widget-title-h5 {
+    margin: 1em 0 0;
+}
+.home .ee-ical-sbmt{ display: none;}
+.home .ee-upcoming-events-widget-li .ee-event-datetimes-ul {
+
+    padding: 10px 0;
+    padding-left: 10px;
+}
+.home  .price{ min-height: 95px; margin-top: 15px; font-size: 14px;}
+.home .woocommerce ul.products li.product,.home .woocommerce-page ul.products li.product{ margin-top: 25px;}
+@media (max-width: 950px) and (min-width: 320px){
+  .home .ee-upcoming-events-widget-ul > li {
+    float: none;
+
+    width: 95%;}
+}
