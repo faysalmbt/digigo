@@ -24,7 +24,7 @@ body { background-color:#fff; font-family:maven_proregular; background: url(../i
  /*Valentine CSS */
 
 
-.active { background-color:#3a3a3a; border-radius:3px; color:#fff;}
+.active { background-color:#ececec; border-radius:3px; color:#000;}
  .headstrip { background-color: rgba(0,0,0,.2); padding:3px; color:#fff;}
  .headin{ background-color:#fff; padding:10px}
  a {
@@ -199,6 +199,7 @@ h1, h2, h3, h4, p { margin:0; padding:0}
 
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .login_wraper { position: relative; top: -15px; right: 23px;}
 	.navbar-nav {
     float: left; 
 }

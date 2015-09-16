@@ -1,0 +1,459 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Modal Login\n"
+"POT-Creation-Date: 2013-12-07 10:37+0100\n"
+"PO-Revision-Date: 2013-12-07 10:38+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_n:1,2;_x:1,2c;_ex:1,2x;esc_attr__;esc_attr_e;_;"
+"gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../pressapps-modal-login.php:57
+msgid "Error: Modal Login class failed to load"
+msgstr ""
+
+#: ../inc/admin-page.php:17 ../widget/class-login-widget.php:14
+msgid "Modal Login"
+msgstr ""
+
+#: ../inc/admin-page.php:32
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: ../inc/admin-page.php:36
+msgid "Modal Login Settings"
+msgstr ""
+
+#: ../inc/admin-page.php:71
+msgid "Select Menu Location"
+msgstr ""
+
+#: ../inc/admin-page.php:75
+msgid "Setup"
+msgstr ""
+
+#: ../inc/admin-page.php:76
+msgid "Style"
+msgstr ""
+
+#: ../inc/admin-page.php:77
+msgid "Registration Email"
+msgstr ""
+
+#: ../inc/admin-page.php:78
+msgid "Menu"
+msgstr ""
+
+#: ../inc/admin-page.php:81
+msgid "Login Widget"
+msgstr ""
+
+#: ../inc/admin-page.php:87
+msgid "Shortcode"
+msgstr ""
+
+#: ../inc/admin-page.php:93
+msgid "PHP Code"
+msgstr ""
+
+#: ../inc/admin-page.php:99
+msgid "Login Redirect URL"
+msgstr ""
+
+#: ../inc/admin-page.php:104
+msgid ""
+"Set optional login redirect URL, if not set you will be redirected to login "
+"page."
+msgstr ""
+
+#: ../inc/admin-page.php:106
+msgid "Logout Redirect URL"
+msgstr ""
+
+#: ../inc/admin-page.php:111
+msgid ""
+"Set optional logout redirect URL, if not set you will be redirected to home "
+"page."
+msgstr ""
+
+#: ../inc/admin-page.php:115
+msgid "Add To Menu"
+msgstr ""
+
+#: ../inc/admin-page.php:126
+msgid "Add To Theme User Menu"
+msgstr ""
+
+#: ../inc/admin-page.php:131
+msgid "Add Login/Logout link to theme user menu"
+msgstr ""
+
+#: ../inc/admin-page.php:136
+msgid "User Genrated Password"
+msgstr ""
+
+#: ../inc/admin-page.php:141
+msgid "Allow users to enter their own password during registration."
+msgstr ""
+
+#: ../inc/admin-page.php:144
+msgid "Select Layout"
+msgstr ""
+
+#: ../inc/admin-page.php:149
+msgid "Default"
+msgstr ""
+
+#: ../inc/admin-page.php:150
+msgid "Wide"
+msgstr ""
+
+#: ../inc/admin-page.php:152
+msgid "Select modal login box layout."
+msgstr ""
+
+#: ../inc/admin-page.php:154
+msgid "Display Labels"
+msgstr ""
+
+#: ../inc/admin-page.php:159
+msgid "Labels"
+msgstr ""
+
+#: ../inc/admin-page.php:160
+msgid "Placeholders"
+msgstr ""
+
+#: ../inc/admin-page.php:162
+msgid "Display textfield labels or placeholders."
+msgstr ""
+
+#: ../inc/admin-page.php:164
+msgid "Background Color"
+msgstr ""
+
+#: ../inc/admin-page.php:169
+msgid "Set modal box background color."
+msgstr ""
+
+#: ../inc/admin-page.php:171
+msgid "Font Color"
+msgstr ""
+
+#: ../inc/admin-page.php:176
+msgid "Set modal box font color."
+msgstr ""
+
+#: ../inc/admin-page.php:178
+msgid "Link Color"
+msgstr ""
+
+#: ../inc/admin-page.php:183
+msgid "Set modal box link color."
+msgstr ""
+
+#: ../inc/admin-page.php:185
+msgid "Button Color"
+msgstr ""
+
+#: ../inc/admin-page.php:190
+msgid "Set modal box button color."
+msgstr ""
+
+#: ../inc/admin-page.php:192
+msgid "Custom CSS"
+msgstr ""
+
+#: ../inc/admin-page.php:197
+msgid "Add custom CSS code."
+msgstr ""
+
+#: ../inc/admin-page.php:200
+msgid "Email Subject"
+msgstr ""
+
+#: ../inc/admin-page.php:207
+msgid "Email Body"
+msgstr ""
+
+#: ../inc/admin-page.php:212
+msgid ""
+"Add new user registration email template: %username%, %password%, %loginlink"
+"%. Leave blank to use default template."
+msgstr ""
+
+#: ../inc/admin-page.php:229
+msgid ""
+"You can add login/logout link to your site in the following ways (for more "
+"setup information see plugin documentation included in the download package):"
+msgstr ""
+
+#: ../inc/admin-page.php:238
+msgid "Customize the look and feel of the modal login"
+msgstr ""
+
+#: ../inc/admin-page.php:242
+msgid "Customize the content of new user registration email"
+msgstr ""
+
+#: ../inc/admin-page.php:245
+msgid "Append Login/Logout link to WP menus"
+msgstr ""
+
+#: ../inc/class-modal-login.php:62 ../inc/class-modal-login.php:466
+#: ../inc/class-modal-login.php:633
+msgid "Login"
+msgstr ""
+
+#: ../inc/class-modal-login.php:63
+msgid "Logout"
+msgstr ""
+
+#: ../inc/class-modal-login.php:107
+msgid "Checking Credentials..."
+msgstr ""
+
+#: ../inc/class-modal-login.php:172
+msgid "Wrong Username or Password!"
+msgstr ""
+
+#: ../inc/class-modal-login.php:177
+msgid "Login Successful!"
+msgstr ""
+
+#: ../inc/class-modal-login.php:198
+msgid "Registration complete."
+msgstr ""
+
+#: ../inc/class-modal-login.php:200
+msgid "Registration complete. Check your email."
+msgstr ""
+
+#: ../inc/class-modal-login.php:232
+msgid "Password Reset. Please check your email."
+msgstr ""
+
+#: ../inc/class-modal-login.php:255
+msgid "Please enter a username."
+msgstr ""
+
+#: ../inc/class-modal-login.php:257
+msgid ""
+"This username is invalid because it uses illegal characters. Please enter a "
+"valid username."
+msgstr ""
+
+#: ../inc/class-modal-login.php:260
+msgid "This username is already registered. Please choose another one."
+msgstr ""
+
+#: ../inc/class-modal-login.php:265
+msgid "Please type your email address."
+msgstr ""
+
+#: ../inc/class-modal-login.php:267
+msgid "The email address isn't correct."
+msgstr ""
+
+#: ../inc/class-modal-login.php:270
+msgid "This email is already registered, please choose another one."
+msgstr ""
+
+#: ../inc/class-modal-login.php:277
+msgid "Please type your password."
+msgstr ""
+
+#: ../inc/class-modal-login.php:279
+msgid "Password must be 6 character long."
+msgstr ""
+
+#: ../inc/class-modal-login.php:281
+msgid "Passwords do not match."
+msgstr ""
+
+#: ../inc/class-modal-login.php:293
+msgid "Couldn't register you... please contact the site administrator"
+msgstr ""
+
+#: ../inc/class-modal-login.php:311
+#, php-format
+msgid "New user registration on your site %s:"
+msgstr ""
+
+#: ../inc/class-modal-login.php:312 ../inc/class-modal-login.php:320
+#: ../inc/class-modal-login.php:410
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: ../inc/class-modal-login.php:313
+#, php-format
+msgid "Email: %s"
+msgstr ""
+
+#: ../inc/class-modal-login.php:315
+#, php-format
+msgid "[%s] New User Registration"
+msgstr ""
+
+#: ../inc/class-modal-login.php:321
+#, php-format
+msgid "Password: %s"
+msgstr ""
+
+#: ../inc/class-modal-login.php:327
+#, php-format
+msgid "[%s] Your username and password"
+msgstr ""
+
+#: ../inc/class-modal-login.php:362
+msgid "Please enter a username or e-mail address."
+msgstr ""
+
+#: ../inc/class-modal-login.php:366
+msgid "There is no user registered with that email address."
+msgstr ""
+
+#: ../inc/class-modal-login.php:378
+msgid "Invalid username or e-mail."
+msgstr ""
+
+#: ../inc/class-modal-login.php:392
+msgid "Password reset is not allowed for this user"
+msgstr ""
+
+#: ../inc/class-modal-login.php:408
+msgid "Someone requested that the password be reset for the following account:"
+msgstr ""
+
+#: ../inc/class-modal-login.php:411
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: ../inc/class-modal-login.php:412
+msgid "To reset your password, visit the following address:"
+msgstr ""
+
+#: ../inc/class-modal-login.php:423
+#, php-format
+msgid "[%s] Password Reset"
+msgstr ""
+
+#: ../inc/class-modal-login.php:428
+msgid ""
+"The e-mail could not be sent. Possible reason: your host may have disabled "
+"the mail() function."
+msgstr ""
+
+#: ../inc/class-modal-login.php:475 ../inc/class-modal-login.php:476
+#: ../inc/class-modal-login.php:519 ../inc/class-modal-login.php:520
+msgid "Username"
+msgstr ""
+
+#: ../inc/class-modal-login.php:480 ../inc/class-modal-login.php:481
+#: ../inc/class-modal-login.php:487 ../inc/class-modal-login.php:531
+#: ../inc/class-modal-login.php:532
+msgid "Password"
+msgstr ""
+
+#: ../inc/class-modal-login.php:487
+msgid "Remember Me"
+msgstr ""
+
+#: ../inc/class-modal-login.php:494
+msgid "Log In"
+msgstr ""
+
+#: ../inc/class-modal-login.php:510 ../inc/class-modal-login.php:618
+msgid "Register"
+msgstr ""
+
+#: ../inc/class-modal-login.php:524 ../inc/class-modal-login.php:525
+msgid "Email"
+msgstr ""
+
+#: ../inc/class-modal-login.php:535 ../inc/class-modal-login.php:536
+msgid "Confirm Password"
+msgstr ""
+
+#: ../inc/class-modal-login.php:548
+msgid "Sign Up"
+msgstr ""
+
+#: ../inc/class-modal-login.php:565
+msgid "Forgotten Password?"
+msgstr ""
+
+#: ../inc/class-modal-login.php:574 ../inc/class-modal-login.php:575
+msgid "Username or Email"
+msgstr ""
+
+#: ../inc/class-modal-login.php:584
+msgid "Reset Password"
+msgstr ""
+
+#: ../inc/class-modal-login.php:620
+msgid "Lost your password?"
+msgstr ""
+
+#: ../inc/class-modal-login.php:622
+msgid "Back to Login"
+msgstr ""
+
+#: ../inc/class-modal-login.php:650
+#, php-format
+msgctxt "Logout Text"
+msgid "%s"
+msgstr ""
+
+#: ../inc/class-modal-login.php:652
+msgid "View Admin"
+msgstr ""
+
+#: ../inc/class-modal-login.php:654
+#, php-format
+msgctxt "Login Text"
+msgid "%s"
+msgstr ""
+
+#: ../inc/class-modal-login.php:677
+#, php-format
+msgctxt "Shortcode Logout Text"
+msgid "%s"
+msgstr ""
+
+#: ../inc/class-modal-login.php:679
+#, php-format
+msgctxt "Shortcode Login Text"
+msgid "%s"
+msgstr ""
+
+#: ../widget/class-login-widget.php:11
+msgid "Display modal login and logout links"
+msgstr ""
+
+#: ../widget/form.php:8
+msgid "Title:"
+msgstr ""
+
+#: ../widget/form.php:13
+msgid "Login Text:"
+msgstr ""
+
+#: ../widget/form.php:18
+msgid "Logout Text:"
+msgstr ""
+
+#: ../widget/form.php:23
+msgid "Show Admin Link:"
+msgstr ""

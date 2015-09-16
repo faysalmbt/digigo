@@ -18,6 +18,7 @@
   <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css" rel="stylesheet">
   <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/stylesheet.css" rel="stylesheet">
   <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style_mbt.css" rel="stylesheet">
+  
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,7 +43,11 @@
                 $header_link = get_post_meta(56, 'header_link', true);
                 ?>
                 <strong><a href="<?php echo $header_link; ?>" target="_blank"><?php echo $header_text; ?></a></strong>
-                  <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
+                    <div class="login_wraper">
+                      
+                      <span class="login_style" ><?php add_modal_login_link(); ?><?php if (is_user_logged_in()){?>|<a href="<?php echo home_url('/user-dashboard/'); ?>">Dashboard</a><?php } ?></span>
+                      <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
+                    </div>  
                   </div>
 
     							<span class="pull-left">
@@ -66,11 +71,12 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
+        
          <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php show_easylogo(); ?></a>
-       </div>
+        </div>
        <!-- Collect the nav links, forms, and other content for toggling -->
        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+      
           <?php
 
           $args = array(
@@ -87,7 +93,7 @@
             'after'           => '',
             'link_before'     => '',
             'link_after'      => '',
-            'items_wrap'      => '<li id="%1$s" >%3$s</li>',
+            'items_wrap'      => '<ul id="%1$s" class="nav navbar-nav" >%3$s</ul>',
             'depth'           => 0,
             'walker'          => ''
             );
@@ -95,7 +101,7 @@
           wp_nav_menu( $args );
           ?>
 
-    				</ul>
+    			
     			</div>
     			<!-- /.navbar-collapse -->
     		</div>

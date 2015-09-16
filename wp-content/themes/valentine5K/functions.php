@@ -644,3 +644,74 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
   
   return $fragments;
 }
+
+// date time meta box for products
+  add_action( 'admin_enqueue_scripts', 'theme_name_scripts' );
+  function theme_name_scripts() {
+    wp_enqueue_style( 'custom_wp_admin_css', get_stylesheet_directory_uri() . '/css/jquery.datetimepicker.css');
+    wp_enqueue_script( 'custom_script', get_stylesheet_directory_uri() . '/js/jquery.datetimepicker.js');
+ 
+  }
+  
+  function theme_frontend_script() {
+    wp_enqueue_script( 'bootstrap-validator', get_stylesheet_directory_uri() . '/js/validator.js');
+  }
+  add_action( 'wp_enqueue_scripts', 'theme_frontend_script' );
+  
+
+function pbd_events_meta_box() {
+  add_meta_box('pbd-events-meta-box', 'Event Date', 'pbd_events_create_meta_box', 'product', 'normal', 'high');
+}
+add_action('add_meta_boxes', 'pbd_events_meta_box');
+
+function pbd_events_create_meta_box($product) {
+  $start_date = get_post_meta($product->ID, 'datetimepickerstart', true);
+  $end_date = get_post_meta($product->ID, 'datetimepickerend', true);
+  $distance = get_post_meta($product->ID, 'distance', true);
+ ?>
+ <script type="text/javascript">
+  jQuery(document).ready(function(){
+    jQuery('#datetimepickerstart').datetimepicker();
+    jQuery('#datetimepickerend').datetimepicker();
+  });
+</script>
+<label>Start Date:</label>
+<input id="datetimepickerstart" name="datetimepickerstart" value="<?php echo (!empty($start_date) ? $start_date : " " )?>" type="text" ></br>
+<label>End Date:</label>
+<input id="datetimepickerend" name="datetimepickerend" value="<?php echo (!empty($end_date) ? $end_date : " " )?>" type="text" ></br>
+<label>Distance:</label>
+<input id="distance" name="distance" value="<?php echo (!empty($distance) ? $distance : " " )?>" type="text" >
+ <?php
+}
+add_action( 'save_post', 'add_event_dates', 10, 2 );
+function add_event_dates($product_id, $product) {
+
+  if ( isset($_POST["datetimepickerstart"]) && $_POST["datetimepickerstart"] != " " ) {
+    //echo $date = $_POST["datetimepickerstart"];
+    update_post_meta($product_id, 'datetimepickerstart', $_POST['datetimepickerstart'] );
+  }
+  if ( isset($_POST["datetimepickerend"]) && $_POST["datetimepickerend"] != " " ) {
+    update_post_meta($product_id, 'datetimepickerend', $_POST['datetimepickerend'] );
+  }
+  if ( isset($_POST["distance"]) && $_POST["distance"] != " " ) {
+    update_post_meta($product_id, 'distance', $_POST['distance'] );
+  }
+}
+
+add_action( 'woocommerce_order_items_table', 'xcsn_woocommerce_order_items_table');
+  function xcsn_woocommerce_order_items_table ( $order ) {
+
+  $order_id = $order->id;
+  $order = new WC_Order( $order_id );
+  $items = $order->get_items();
+
+  foreach ( $items as $item ) {
+    $product_name = $item['name'];
+    $product_id_1 = $item['product_id'];
+    $product_id = $order_id;
+    $start_date = get_post_meta($product_id_1,"datetimepickerstart",true);
+    $start_end = get_post_meta($product_id_1,"datetimepickerend",true);
+    $customer_user = get_post_meta($product_id,"_customer_user",true);
+  }
+  
+}
